@@ -1,4 +1,6 @@
-
+import {Routes, Route, Navigate} from 'react-router-dom'
+import Login from './components/Login'
+import ProtectedRoute from './components/ProtectedRouter'
 import './App.css'
 
 const employmentTypesList = [
@@ -39,6 +41,11 @@ const salaryRangesList = [
   },
 ]
 
-const App = () =>(<h1>Vite + React</h1>)
+const App = () =>(
+  <Routes>
+    <Route path="/login" element={<Login />} />
+    <Route path="/" element={<ProtectedRoute><Home/></ProtectedRoute>} />
+    </Routes>
+)
 
 export default App
