@@ -73,7 +73,7 @@ const Login = () => {
             type="text"
             value={username}
             className="login-input-field"
-            placeholder="santosh"
+            placeholder="lalit"
             id="username"
             onChange={(e) => setUsername(e.target.value)}
           />
@@ -86,7 +86,7 @@ const Login = () => {
             type="password"
             value={password}
             className="login-input-field"
-            placeholder="santosh@2023"
+            placeholder="lalit@123"
             id="password"
             onChange={(e) => setPassword(e.target.value)}
           />
