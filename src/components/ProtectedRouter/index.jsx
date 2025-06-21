@@ -1,12 +1,17 @@
 import { Navigate } from 'react-router-dom';
-import Cookie from 'js-cookie';
+import Cookies from 'js-cookie';
+import PropTypes from 'prop-types';
 
 const ProtectedRoute = ({ children }) => {
-  const token = Cookie.get('jwt_token');
-  if (token === undefined) {
+  const token = Cookies.get('jwt_token');
+  if (!token) {
     return <Navigate to="/login" replace />;
   }
   return children;
+};
+
+ProtectedRoute.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default ProtectedRoute;
