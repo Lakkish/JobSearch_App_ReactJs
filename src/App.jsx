@@ -9,7 +9,7 @@ const App = () =>(
   <Routes>
     <Route path="/login" element={<Login />} />
     <Route path="/" element={<ProtectedRoute><Home/></ProtectedRoute>} />
-    </Routes>
+  </Routes>
 )
 
 export default App
