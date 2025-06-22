@@ -1,0 +1,149 @@
+.job-card {
+  background-color: #272727;
+  border-radius: 15px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .job-card {
+    width: 90%;
+    margin: 12px auto;
+  }
+}
+
+.job-card-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 16px;
+}
+
+.logo-title-container-card {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.company-logo-card {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.title-rating-container-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.job-title-card {
+  margin: 0 0 10px 0;
+  color: #f8fafc;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.rating-container-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.star-icon-card {
+  color: #fbbf24;
+  width: 22px;
+  height: 22px;
+}
+
+.rating-number-card {
+  margin: 0;
+  color: #f8fafc;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.location-package-container-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.icon-type-container-card {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.type-icon {
+  color: #ffffff;
+  width: 18px;
+  height: 18px;
+}
+
+.type-text {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #f8fafc;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.package-text {
+  margin: 0 0 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: #f8fafc;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.separator {
+  border: 1px solid #64748b;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.description-heading-card {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.job-description-card {
+  margin: 8px 0 0 0;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* @media screen and (min-width: 768px) {
+  .job-card-link {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo-title-container-card {
+    flex-direction: row;
+    align-items: center;
+  }
+  .company-logo-card {
+    width: 100px;
+    height: 100px;
+  }
+  .title-rating-container-card {
+    flex-grow: 1;
+  }
+  .location-package-container-card {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+} */
