@@ -4,6 +4,7 @@
   flex-direction: column;
   min-height: 100vh;
   background-color: #121212;
+  overflow-x: hidden;
   /* border: 1px solid white; */
 }
 .jobs-page {
@@ -185,4 +186,8 @@
   .no-jobs-description {
     font-size: 15px;
   }
+}
+
+body {
+  overflow-x: hidden !important;
 }
