@@ -1,6 +1,7 @@
-import React from 'react';
-import Loader from 'react-loader-spinner';
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
+import { TailSpin } from 'react-loader-spinner';
+
+
+
 import './index.css';
 
 const apiStatusConstants = {
@@ -38,7 +39,7 @@ const ProfileDetails = (props) => {
 
   const renderProfileLoader = () => (
     <div className="loader-container-profile" data-testid="loader">
-      <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
+      <TailSpin height={50} width={50} color="#4fa94d" />
     </div>
   );
 

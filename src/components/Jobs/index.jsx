@@ -1,14 +1,15 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Cookies from 'js-cookie';
 import { BsSearch } from 'react-icons/bs';
-import Loader from 'react-loader-spinner';
+import { TailSpin } from 'react-loader-spinner';
+
+
 
 import Header from '../Header';
 import ProfileDetails from '../ProfileDetails';
 import FiltersGroup from '../FiltersGroup';
 import JobCard from '../JobCard';
 
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import './index.css';
 
 const apiStatusConstants = {
@@ -192,7 +193,7 @@ const Jobs = () => {
 
   const renderJobsLoaderView = () => (
     <div className="jobs-loader-container" data-testid="loader">
-      <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
+      <TailSpin height={50} width={50} color="#4fa94d" />
     </div>
   );
 

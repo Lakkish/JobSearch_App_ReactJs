@@ -5,12 +5,14 @@ import { AiFillStar } from 'react-icons/ai';
 import { IoLocationSharp } from 'react-icons/io5';
 import { BsFillBriefcaseFill } from 'react-icons/bs';
 import { FiExternalLink } from 'react-icons/fi';
-import Loader from 'react-loader-spinner';
+import { TailSpin } from 'react-loader-spinner';
+
+
+
 
 import Header from '../Header';
 import SimilarJobCard from '../SimilarJobCard';
 
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import './index.css';
 
 const apiStatusConstants = {
@@ -94,7 +96,7 @@ const JobItemDetails = () => {
 
   const renderLoaderView = () => (
     <div className="jobs-loader-container" data-testid="loader">
-      <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
+      <TailSpin height={50} width={50} color="#4fa94d" />
     </div>
   );
 
