@@ -8,7 +8,7 @@
   flex-grow: 1;
   padding-top: 25px;
   width: 90%;
-  max-width: 950px;
+  max-width: 100vw;
   align-self: center;
   padding-bottom: 40px;
   /* border: 1px solid white; */
