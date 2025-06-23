@@ -3,6 +3,7 @@ import Login from './components/Login'
 import ProtectedRoute from './components/ProtectedRouter'
 import Home from './components/Home'
 import Jobs from './components/Jobs'
+import JobItemDetails from './components/JobItemDetails'
 import './App.css'
 
 
@@ -11,6 +12,7 @@ const App = () =>(
     <Route path="/login" element={<Login />} />
     <Route path="/" element={<ProtectedRoute><Home/></ProtectedRoute>} />
     <Route path="/jobs" element={<ProtectedRoute><Jobs/></ProtectedRoute>} />
+    <Route path="/jobs/:id" element={<ProtectedRoute><JobItemDetails/></ProtectedRoute>} />
   </Routes>
 )
 
