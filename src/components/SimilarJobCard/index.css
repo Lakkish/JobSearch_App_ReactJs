@@ -1,0 +1,14 @@
+.similar-job-card {
+  background-color: #272727;
+  border-radius: 15px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px;
+}
+/* @media screen and (min-width: 768px) {
+  .similar-job-card {
+    padding: 16px;
+  }
+} */
