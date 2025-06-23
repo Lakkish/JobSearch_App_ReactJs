@@ -1,12 +1,75 @@
-# React + Vite
+# JobSearch App (ReactJS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application for searching and managing job opportunities, built with ReactJS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search for jobs by title, company, or location
+- View detailed job descriptions
+- Save favorite jobs
+- Responsive design for mobile and desktop
+- User authentication (login/register)
+- Apply to jobs directly from the app
 
-## Expanding the ESLint configuration
+## Login Credentials
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Username:** lalit  
+- **Password:** lalit@123
+
+## Screenshots
+
+![JobSearch App Screenshot](./screenshots/main.png)
+
+## Live Demo
+
+Check out the deployed app here: [jobsearch-app-react-js.vercel.app](https://jobsearch-app-react-js.vercel.app)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/JobSearch_App_ReactJs.git
+    cd JobSearch_App_ReactJs
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3. Start the development server:
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+
+## Project Structure
+
+The project follows a standard ReactJS structure:
+
+```
+JobSearch_App_ReactJs/
+├── public/                # Public assets
+├── src/                   # Source code
+│   ├── components/        # Reusable components
+│   ├── pages/             # Page components
+│   ├── services/          # API services
+│   ├── styles/            # CSS styles
+│   ├── App.js             # Main application component
+│   ├── index.js           # Entry point
+├── package.json           # Project metadata and dependencies
+└── README.md              # Project documentation
+``` 
+
