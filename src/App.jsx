@@ -6,18 +6,24 @@ import Jobs from './components/Jobs'
 import JobItemDetails from './components/JobItemDetails'
 import NotFound from './components/NotFound'
 
+import { Analytics } from '@vercel/analytics/react'
+
 
 import './App.css'
 
 
 const App = () =>(
-  <Routes>
-    <Route path="/login" element={<Login />} />
-    <Route path="/" element={<ProtectedRoute><Home/></ProtectedRoute>} />
-    <Route path="/jobs" element={<ProtectedRoute><Jobs/></ProtectedRoute>} />
-    <Route path="/jobs/:id" element={<ProtectedRoute><JobItemDetails/></ProtectedRoute>} />
-    <Route path="*" element={<NotFound />} />
-  </Routes>
+  <>
+    <Analytics />
+
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<ProtectedRoute><Home/></ProtectedRoute>} />
+      <Route path="/jobs" element={<ProtectedRoute><Jobs/></ProtectedRoute>} />
+      <Route path="/jobs/:id" element={<ProtectedRoute><JobItemDetails/></ProtectedRoute>} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </>
 )
 
 export default App
