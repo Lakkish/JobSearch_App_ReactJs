@@ -5,7 +5,7 @@ import { AiFillStar } from 'react-icons/ai';
 import { IoLocationSharp } from 'react-icons/io5';
 import { BsFillBriefcaseFill } from 'react-icons/bs';
 import { FiExternalLink } from 'react-icons/fi';
-import { TailSpin } from 'react-loader-spinner';
+import { ClipLoader } from 'react-spinners'
 
 
 
@@ -96,7 +96,7 @@ const JobItemDetails = () => {
 
   const renderLoaderView = () => (
     <div className="jobs-loader-container" data-testid="loader">
-      <TailSpin height={50} width={50} color="#4fa94d" />
+      <ClipLoader color="#4fa94d" size={50} />
     </div>
   );
 

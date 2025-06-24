@@ -1,4 +1,4 @@
-import { TailSpin } from 'react-loader-spinner';
+import { ClipLoader } from 'react-spinners'
 
 
 
@@ -39,7 +39,7 @@ const ProfileDetails = (props) => {
 
   const renderProfileLoader = () => (
     <div className="loader-container-profile" data-testid="loader">
-      <TailSpin height={50} width={50} color="#4fa94d" />
+      <ClipLoader color="#4fa94d" size={50} />
     </div>
   );
 

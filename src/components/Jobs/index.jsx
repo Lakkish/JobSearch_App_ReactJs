@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Cookies from 'js-cookie';
 import { BsSearch } from 'react-icons/bs';
-import { TailSpin } from 'react-loader-spinner';
+import { ClipLoader } from 'react-spinners'
 
 
 
@@ -193,7 +193,7 @@ const Jobs = () => {
 
   const renderJobsLoaderView = () => (
     <div className="jobs-loader-container" data-testid="loader">
-      <TailSpin height={50} width={50} color="#4fa94d" />
+      <ClipLoader color="#ffffff" size={50} />
     </div>
   );
 
